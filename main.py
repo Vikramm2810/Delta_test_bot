@@ -106,6 +106,7 @@ def simulate_trade(signal):
     else:
         print(f"[{now}] ⏳ No Trade Signal")
 
+
 def run_bot():
     print("🚀 Bot Started — Delta Testnet Live Trading Mode")
     last_signal = None
@@ -120,7 +121,6 @@ def run_bot():
                 print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔁 Holding")
         except Exception as e:
             print("❌ Error:", e)
-       print("⏳ Still alive at", datetime.now().strftime('%H:%M:%S'))
-time.sleep(30)
-
-run_bot()
+        
+        print("⏳ Still alive at", datetime.now().strftime('%H:%M:%S'))
+        time.sleep(30)

@@ -120,6 +120,7 @@ def run_bot():
                 print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔁 Holding")
         except Exception as e:
             print("❌ Error:", e)
-        time.sleep(30)
+       print("⏳ Still alive at", datetime.now().strftime('%H:%M:%S'))
+time.sleep(30)
 
 run_bot()
